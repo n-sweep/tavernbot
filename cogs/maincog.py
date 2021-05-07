@@ -45,7 +45,7 @@ class MainCog(commands.Cog):
 			try:
 				ctx = await bot.get_context(msg)
 				auth = msg.author
-				if not ctx.valid or str(ctx.channel.id) in bot.config['ignored_channels'].keys():
+				if str(ctx.channel.id) in bot.config['ignored_channels'].keys():
 					return
 				if ctx.prefix == bot.config.get('admin_prefix'):
 					await msg.delete()
