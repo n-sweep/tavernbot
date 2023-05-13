@@ -1,0 +1,34 @@
+{
+    "name": "TavernBot",
+    "description": "This is a description of TavernBot",
+    "token": "NTU0NzY1NzE2OTQ0MDYwNDE3.XIbH1Q.DzJrTgtunW1YUgFODKaZO6d4sK0",
+    "cogs": [
+        "maincog",
+        "admincog",
+        "tavcog"
+    ],
+    "author": 401447959054516225,
+    "admins": [
+        401447959054516225
+    ],
+    "prefix": "!",
+    "admin_prefix": ".",
+    "ignored_channels": {
+        "701830053083873431": {
+            "name": "octoprint",
+            "server": {
+                "name": "Sweep's Bot Factory",
+                "id": 554770948415553546
+            }
+        }
+    },
+    "filtered_words": [
+        "shit",
+        "piss",
+        "fuck",
+        "cunt",
+        "cocksucker",
+        "motherfucker",
+        "tits"
+    ]
+}

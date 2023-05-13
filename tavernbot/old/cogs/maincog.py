@@ -5,7 +5,7 @@ from random import choice
 import discord
 from discord.ext import commands
 
-blue = 0x7289da
+blue = 0x7389da
 green = 0x43b581
 yellow = 0xfaa61a
 orange = 0xf04747
@@ -60,7 +60,6 @@ class MainCog(commands.Cog):
 
 		@bot.event
 		async def on_command_error(ctx, error):
-			print(error)
 			if isinstance(error, commands.CommandNotFound):
 				if ctx.prefix != bot.config.get('admin_prefix'):
 					auth = ctx.message.author

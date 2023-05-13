@@ -12,7 +12,6 @@ from discord.ext.commands.bot import when_mentioned_or
 
 class Bot(commands.Bot):
 
-	config = None
 	commands_list = {}
 
 	def __init__(self, conf, connector=None):
