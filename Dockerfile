@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 run apt-get update && apt-get -y install python3-pip git tzdata
 
-RUN git clone https://github.com/n-sweep/tavernbot
+RUN git clone https://github.com/n-sweep/tavernbot .
 
 RUN pip3 install .
 

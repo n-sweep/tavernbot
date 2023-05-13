@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from setuptoosl import setup
+from setuptools import setup
 
 setup(
     name='tavernbot',
