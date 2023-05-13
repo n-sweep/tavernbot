@@ -1,6 +1,5 @@
 # tavernbot/
-__init__.py
-.json
+*.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
