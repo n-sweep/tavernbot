@@ -18,7 +18,7 @@ class MainCog(commands.Cog):
 
         @bot.event
         async def on_ready():
-            logging.info('\nLogged in as')
+            logging.info('Logged in as:')
             logging.info(bot.user.name)
             logging.info(bot.user.id)
             logging.info('Discord.py Version: {}'.format(discord.__version__))
