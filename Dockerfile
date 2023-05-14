@@ -4,12 +4,12 @@ WORKDIR /home/work
 ENV TZ='America/New_York'
 ENV DEBIAN_FRONTEND=noninteractive
 
-run apt-get update && apt-get -y install python3-pip git tzdata
+run apt-get update && apt-get -y install python3-pip tzdata
 
 RUN git clone https://github.com/n-sweep/tavernbot .
 
 RUN pip3 install .
 
-ENTRYPOINT ["python3", "run.py"]
+ENTRYPOINT ["python3", "tavernbot"]
 
-# docker run --name twitchbot --net host -dit -v /home/n/Documents/Python/twitchbot/:/home/work/twitchbot n-sweep/twitchbot
+# docker run --name tavernbot --net host -dit -v /path/to/tavernbot/:/home/work/ n-sweep/twitchbot
