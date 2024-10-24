@@ -7,6 +7,7 @@ from bot.core import Bot
 
 # https://discordapp.com/oauth2/authorize?client_id=ID_HERE&scope=bot&permissions=0
 
+os.makedirs('./logs', exist_ok=True)
 handler = logging.FileHandler('logs/session.log', encoding='utf-8', mode='w')
 
 
