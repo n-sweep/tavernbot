@@ -4,11 +4,11 @@ WORKDIR /home/work
 ENV TZ='America/New_York'
 ENV DEBIAN_FRONTEND=noninteractive
 
-run apt-get update && apt-get -y install python3-pip tzdata git
+RUN apt-get update && apt-get -y install python3-pip tzdata git
 
 RUN git clone https://github.com/n-sweep/tavernbot .
 
-RUN pip3 install .
+RUN pip3 install --break-system-packages .
 
 ENTRYPOINT ["python3", "tavernbot"]
 
